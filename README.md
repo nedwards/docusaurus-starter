@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+<a href="https://docusaurus-starter-olive.vercel.app/">View Demo</a>
+
 ### Installation
 
 ```
