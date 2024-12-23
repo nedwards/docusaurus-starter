@@ -1,0 +1,9 @@
+{
+  "--button-background-color": "#000",
+  "--button-color": "#fff",
+  "--button-border-radius": "4px",
+  "--button-padding": "0.5rem 1rem",
+  "--button-font-size": "1rem",
+  "--card-background-color": "#f9f9f9",
+  "--card-border-radius": "8px"
+}

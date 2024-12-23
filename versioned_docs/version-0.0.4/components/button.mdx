@@ -1,0 +1,79 @@
+---
+id: button
+title: Button
+---
+
+import Link from '@docusaurus/Link'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import PropsTable from '@site/src/components/PropsTable'
+import CSSVariablesTable from '@site/src/components/CSSVariablesTable'
+import ResourceLinks from '@site/src/components/ResourceLinks'
+import { FigmaIcon, GithubIcon } from '@site/src/components/Icons'
+
+# Button
+
+<p class="markdown-subheading">To trigger an action on the page.</p>
+
+<ResourceLinks
+  links={[
+    {
+      url: 'https://www.figma.com/file/your-file-id',
+      icon: <FigmaIcon />,
+      label: 'Figma',
+    },
+    {
+      url: 'https://github.com/your-org/documentation',
+      icon: <GithubIcon />,
+      label: 'Source',
+    },
+  ]}
+/>
+
+```jsx title="Import"
+import { button } from '@package/component'
+```
+
+## Examples
+
+<Tabs>
+  <TabItem value="lit" label="Lit" default>
+    ```html title="Default Button"
+    <button>Button</button>
+    ```
+  </TabItem>
+  <TabItem value="react" label="React">
+    ```jsx title="Default Button"
+    <Button>Button</Button>
+    ```
+  </TabItem>
+</Tabs>
+
+## Properties
+
+<PropsTable
+  propsData={[
+    {
+      name: 'variant',
+      description: 'Controls the styling of the button',
+      default: '""',
+      type: 'string',
+    },
+    {
+      name: 'className',
+      description: 'Additional css classes can be applied',
+      default: '""',
+      type: 'string',
+    },
+    {
+      name: 'onClick',
+      description: 'Handler function to be called on click',
+      default: 'undefined',
+      type: 'function',
+    },
+  ]}
+/>
+
+## CSS Variables
+
+<CSSVariablesTable componentName="button" />

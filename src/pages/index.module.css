@@ -1,0 +1,65 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* Headings */
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2.2rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+}
+
+/* Banners */
+.banner {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 996px) {
+  .banner {
+    padding: 2rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Basic Grid */
+@media (min-width: 640px) {
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
